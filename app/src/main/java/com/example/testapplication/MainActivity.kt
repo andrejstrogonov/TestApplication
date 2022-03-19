@@ -1,22 +1,14 @@
 package com.example.testapplication
 
-import android.content.Intent
-import android.icu.lang.UCharacter.GraphemeClusterBreak.L
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Toast
-import androidx.core.view.GravityCompat
+import androidx.appcompat.app.AppCompatActivity
 import com.example.testapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding:ActivityMainBinding
+    private lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.apply {
