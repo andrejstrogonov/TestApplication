@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="262dp"
-        android:layout_height="267dp"
+        android:layout_width="273dp"
+        android:layout_height="331dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="71dp"
         android:layout_marginEnd="64dp"
@@ -21,11 +21,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="252dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="62dp"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="68dp"
         android:text="Самая лучшая пицца"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
