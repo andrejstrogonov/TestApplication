@@ -12,7 +12,11 @@
         <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/activity_signup.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/activity_splash_login.xml" value="0.22" />
+        <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/fade_in.xml" value="0.1" />
+        <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/fade_out.xml" value="0.1" />
         <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/login_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/slide_in.xml" value="0.1" />
+        <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/layout/slide_out.xml" value="0.1" />
         <entry key="..\:/Users/strog/StudioProjects/TestApplication/app/src/main/res/menu/nav_menu.xml" value="0.22" />
       </map>
     </option>
