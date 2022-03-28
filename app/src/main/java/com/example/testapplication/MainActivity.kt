@@ -1,8 +1,6 @@
 package com.example.testapplication
 
-import android.graphics.Insets.add
 import android.os.Bundle
-import android.text.TextUtils.replace
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
@@ -15,8 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
-                setReorderingAllowed(true)
+                setCustomAnimations(
+                    R.anim.fade_in,
+                    R.anim.fade_out,
+                    R.anim.slide_in,
+                    R.anim.slide_out
+                )
                 add<LoginFragment>(R.id.login_fragment)
+                setReorderingAllowed(true)
             }
         }
         binding = ActivityMainBinding.inflate(layoutInflater)
