@@ -24,8 +24,11 @@
             android:id="@+id/navigator_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-
             android:layout_gravity="start"
             app:menu="@menu/nav_menu" />
     </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/login_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
