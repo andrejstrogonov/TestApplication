@@ -29,9 +29,12 @@
             app:headerLayout="@layout/header"
             app:menu="@menu/nav_menu" />
     </LinearLayout>
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/login_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.LoginFragment"
+        tools:layout="@layout/login_fragment" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

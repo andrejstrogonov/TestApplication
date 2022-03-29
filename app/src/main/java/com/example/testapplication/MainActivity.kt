@@ -9,7 +9,7 @@ import androidx.fragment.app.commit
 import com.example.testapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
@@ -28,19 +28,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.apply {
             navigatorView.setNavigationItemSelectedListener {
-                when(it.itemId) {
-                    R.id.item1-> Toast.makeText(this@MainActivity,"Item 1",Toast.LENGTH_SHORT).show()
-                    R.id.item2-> Toast.makeText(this@MainActivity,"Item 2",Toast.LENGTH_SHORT).show()
-                    R.id.item3-> Toast.makeText(this@MainActivity,"Item 3",Toast.LENGTH_SHORT).show()
-                    R.id.item11-> Toast.makeText(this@MainActivity,"Item 11",Toast.LENGTH_SHORT).show()
-                    R.id.item22-> Toast.makeText(this@MainActivity,"Item 22",Toast.LENGTH_SHORT).show()
-                    R.id.item33-> Toast.makeText(this@MainActivity,"Item 33",Toast.LENGTH_SHORT).show()
+                when (it.itemId) {
+                    R.id.item1 -> Toast.makeText(this@MainActivity, "Item 1", Toast.LENGTH_SHORT)
+                        .show()
+                    R.id.item2 -> Toast.makeText(this@MainActivity, "Item 2", Toast.LENGTH_SHORT)
+                        .show()
+                    R.id.item3 -> Toast.makeText(this@MainActivity, "Item 3", Toast.LENGTH_SHORT)
+                        .show()
+                    R.id.item11 -> Toast.makeText(this@MainActivity, "Item 11", Toast.LENGTH_SHORT)
+                        .show()
+                    R.id.item22 -> Toast.makeText(this@MainActivity, "Item 22", Toast.LENGTH_SHORT)
+                        .show()
+                    R.id.item33 -> Toast.makeText(this@MainActivity, "Item 33", Toast.LENGTH_SHORT)
+                        .show()
                 }
-                drawer.closeDrawer(GravityCompat.START)
                 true
             }
-        }
 
+        }
     }
 
 }
