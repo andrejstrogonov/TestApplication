@@ -3,13 +3,15 @@ package com.example.testapplication.UserInterface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.add
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.testapplication.R
 import com.example.testapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    lateinit var drawer: DrawerLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
@@ -20,9 +22,11 @@ class MainActivity : AppCompatActivity() {
                     R.anim.slide_in,
                     R.anim.slide_out
                 )
-                add<RegistrationFragment>(R.id.login_fragment)
+                replace<RegistrationFragment>(R.id.registration_fragment, "Registration")
                 setReorderingAllowed(true)
+                addToBackStack(null)
             }
+            val registrationfragment:RegistrationFragment=supportFragmentManager.findFragmentByTag("Registration") as RegistrationFragment
         }
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -44,7 +48,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
-
         }
     }
 

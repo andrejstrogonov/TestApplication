@@ -31,10 +31,45 @@
     </LinearLayout>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/login_fragment"
+        android:id="@+id/registration_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.testapplication.UserInterface.RegistrationFragment"
         tools:layout="@layout/registration_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/login_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.UserInterface.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/profile_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.UserInterface.ProfileFragment"
+        tools:layout="@layout/profile_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/albums_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.UserInterface.AlbumsFragment"
+        tools:layout="@layout/registration_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/favorite_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.UserInterface.RegistrationFragment"
+        tools:layout="@layout/albums_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/news_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.testapplication.UserInterface.NewsFragment"
+        tools:layout="@layout/fragment_item_list" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
