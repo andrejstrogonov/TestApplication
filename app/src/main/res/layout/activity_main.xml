@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:openDrawer="start"
-    tools:context=".MainActivity">
+    tools:context=".UserInterface.MainActivity">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -34,7 +34,7 @@
         android:id="@+id/login_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.testapplication.LoginFragment"
-        tools:layout="@layout/login_fragment" />
+        android:name="com.example.testapplication.UserInterface.RegistrationFragment"
+        tools:layout="@layout/registration_fragment" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

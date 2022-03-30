@@ -1,11 +1,11 @@
-package com.example.testapplication
+package com.example.testapplication.UserInterface
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import com.example.testapplication.R
 import com.example.testapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
                     R.anim.slide_in,
                     R.anim.slide_out
                 )
-                add<LoginFragment>(R.id.login_fragment)
+                add<RegistrationFragment>(R.id.login_fragment)
                 setReorderingAllowed(true)
             }
         }
