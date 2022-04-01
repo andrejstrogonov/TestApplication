@@ -23,8 +23,19 @@ class MainActivity : AppCompatActivity() {
                     R.anim.slide_out
                 )
                 replace<RegistrationFragment>(R.id.registration_fragment, "Registration")
+                replace<ProfileFragment>(R.id.profile_fragment, "Profile")
+                replace<AlbumsFragment>(R.id.albums_fragment, "Albums")
+                replace<FavoriteFragment>(R.id.favorite_fragment, "Favorite")
+                replace<LoginFragment>(R.id.login_fragment,"Login")
+                replace<NewsFragment>(R.id.news_fragment, "News")
+
                 setReorderingAllowed(true)
-                addToBackStack(null)
+                addToBackStack("Registation")
+                addToBackStack("Profile")
+                addToBackStack("Albums")
+                addToBackStack("Favorite")
+                addToBackStack("Login")
+                addToBackStack("News")
             }
             val registrationfragment:RegistrationFragment=supportFragmentManager.findFragmentByTag("Registration") as RegistrationFragment
         }
