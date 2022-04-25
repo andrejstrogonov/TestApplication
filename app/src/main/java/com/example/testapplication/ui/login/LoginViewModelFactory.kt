@@ -6,8 +6,8 @@ import com.example.testapplication.data.LoginDataSource
 import com.example.testapplication.data.LoginRepository
 
 /**
- * ViewModel provider factory to instantiate RegistrationViewModel.
- * Required given RegistrationViewModel has a non-empty constructor
+ * ViewModel provider factory to instantiate LoginViewModel.
+ * Required given LoginViewModel has a non-empty constructor
  */
 class LoginViewModelFactory : ViewModelProvider.Factory {
 
